@@ -3,8 +3,12 @@
 const examples = require('../lib/examples');
 const forEach = require('../lib/for-each.js');
 
-let workingArray = examples.numbers.whole;
+let workingArray = examples.numbers.even;
 
-forEach(workingArray, (e, i, a) => {
-  console.log(e, i, a === workingArray);
+workingArray.forEach((element, index, array) => {
+  console.log(element, index, array === workingArray);
 });
+
+// forEach(workingArray, (element, index, array) => {
+//   console.log(element, index, array === workingArray);
+// });
